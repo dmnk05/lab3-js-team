@@ -141,7 +141,7 @@
 				</div>
 				<div id="tablice">
 				 <h3>Zadania 2 i 3 – tablice</h3>
-				 <!-- Osoba B: kod zadania 2 -->
+				 <script src="js/tablice.js"></script>
 				</div>
 				<div id="dom">
 				 <h3>Zadanie 4 – DOM</h3>
@@ -167,6 +167,22 @@
 			</div>
 		</div>
 	</section>
+
+	<section id="tablica1">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Tablica</h1>
+				
+				<script>
+					document.write('<p>Tablica: ' + tablica.join(', '));
+					document.write(' (elementów: ' + tablica.length + ')</p>');
+				</script>
+				
+			</div>
+		</div>
+	</section>
+
+	
 
 	<footer>
 		<div class="container" style="margin-top: 5%">
