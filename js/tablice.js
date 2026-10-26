@@ -29,3 +29,12 @@ console.log(tablica.length);
 console.log(tablica[15])
 */
 // rozmiar tablicy =21, zawartość tablica[15] undefined
+
+//5
+const nowaDlugosc = tablica.unshift('nowy12', 'nowy13');
+console.log(nowaDlugosc);
+let wynik = console.log(nowaDlugosc);
+
+//6
+//document.write('<p>Tablica: ' + tablica.join(', '));
+//document.write(' (elementów: ' + tablica.length + ')</p>');
