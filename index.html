@@ -135,6 +135,9 @@
 				<div id="skrypty">
 				 <h3>Zadanie 1 – ładowanie skryptów</h3>
 				 <!-- Osoba A: kod zadania 1 -->
+				 <script src="js/imie.js" defer></script>
+				 <script src="js/powitanie.js" defer></script>
+				 <p>Wariant bez atrybutów wstrzymuje parsowanie strony na czas ładowania skryptu, w przeciwieństwie do atrybutów defer i async, które pobierają pliki równolegle do czytania HTML. Atrybut defer uruchamia kod po zbudowaniu całego dokumentu z zachowaniem kolejności, podczas gdy async wykonuje go natychmiast po pobraniu, nie gwarantując w jakiej kolejności skrypty się uruchomią. Metoda document.write potrafi wstawiać tekst tylko w trakcie aktywnego czytania dokumentu przez parser, dlatego przy opóźnionym wykonaniu (defer lub async) jest przez przeglądarkę ignorowana, a w konsoli pojawia się ostrzeżenie.</p>
 				</div>
 				<div id="tablice">
 				 <h3>Zadania 2 i 3 – tablice</h3>
