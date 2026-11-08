@@ -51,3 +51,9 @@ nowaTablica.unshift('Diuna');
 
 document.write('<p>Nowy pierwszy element to <strong>');
 document.write(nowaTablica[0] + '</strong></p>');
+
+const usunietyZKonca = nowaTablica.pop();
+const usunietyZPoczatku = nowaTablica.shift();
+
+document.write('<p>Usunięto z końca: ' + usunietyZKonca + ', usunięto z początku: ' + usunietyZPoczatku + '</p>');
+document.write('<p>Zostało w tablicy: ' + nowaTablica.join(', ') + '</p>');
