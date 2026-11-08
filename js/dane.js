@@ -1,6 +1,6 @@
 const zespol = [
   ['Małejkyj', 'Dominik', '1', '21510@student.ans-elblag.pl', '21510'],
-  ['?', '?', '?', '?', '?'] 
+  ['Bartosz', 'Derlukiewicz', '1', '21444@student.ans-elblag.pl', '21444'] 
 ];
 
 const pola = ['nazwisko', 'imie', 'grupa', 'email', 'indeks'];
