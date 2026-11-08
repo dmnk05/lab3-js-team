@@ -30,3 +30,6 @@ wartosci.forEach((wartosc) => {
     element.textContent = wartosc;
     lista.appendChild(element);
 });
+
+//6
+// bez defer liczba "Fromularzy na całej stronie" = 0, bo skrypt wykonuje się zanim DOM zostanie w pełni załadowany
