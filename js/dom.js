@@ -13,3 +13,20 @@ document.getElementById("licznik").innerHTML =
     `Obrazki (&lt;img&gt;) na całej stronie: ${liczbaObrazkow}<br>` +
     `Odnośniki (&lt;a&gt; z atrybutem href) na całej stronie: ${liczbaOdnoscnikow}<br>` +
     `Akapity (&lt;p&gt;) w sekcji #projekt1: ${liczbaAkapitowProjektu1}`;
+
+const naglowekDom = document.querySelector("#dom h3");
+naglowekDom.textContent = "Zadanie 4 – modyfikacja DOM";
+naglowekDom.classList.add("text-success");
+
+const lista = document.getElementById("lista");
+const wartosci = [
+    `Formularze: ${liczbaFormularzy}`,
+    `Obrazki: ${liczbaObrazkow}`,
+    `Odnośniki: ${liczbaOdnoscnikow}`
+];
+
+wartosci.forEach((wartosc) => {
+    const element = document.createElement("li");
+    element.textContent = wartosc;
+    lista.appendChild(element);
+});
