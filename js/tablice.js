@@ -8,7 +8,7 @@ console.log(tablica);
 console.table(tablica);
 
 //2
-tablica[tablica.length-1]='Nowa wartość';
+tablica[tablica.length - 1] = 'Nowa wartość';
 
 console.table(tablica);
 
@@ -19,7 +19,7 @@ console.log(tablica.length)
 tablica[tablica.length] = 'nowy7';
 console.log(tablica.length);
 
-tablica.push('nowy8','nowy9','nowy10','nowy11');
+tablica.push('nowy8', 'nowy9', 'nowy10', 'nowy11');
 console.log(tablica.length);
 
 //4
@@ -36,8 +36,8 @@ console.log(nowaDlugosc);
 let wynik = console.log(nowaDlugosc);
 
 //6
-//document.write('<p>Tablica: ' + tablica.join(', '));
-//document.write(' (elementów: ' + tablica.length + ')</p>');
+document.write('<p>Tablica: ' + tablica.join(', '));
+document.write(' (elementów: ' + tablica.length + ')</p>');
 
 const nowaTablica = ['Matrix', 'Incepcja', 'Avatar', 'Gladiator'];
 
