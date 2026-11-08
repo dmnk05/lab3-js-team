@@ -17,7 +17,8 @@ function startQuiz() {
         }
     }
 
-    alert(`Twój wynik: ${score}/${questions.length}`);
+    document.getElementById("wynik").textContent =
+        `Wynik: ${score} / ${questions.length}`;
 }
 
 document.getElementById("startQuiz").addEventListener("click", startQuiz);
