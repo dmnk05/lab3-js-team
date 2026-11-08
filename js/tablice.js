@@ -38,3 +38,16 @@ let wynik = console.log(nowaDlugosc);
 //6
 //document.write('<p>Tablica: ' + tablica.join(', '));
 //document.write(' (elementów: ' + tablica.length + ')</p>');
+
+const nowaTablica = ['Matrix', 'Incepcja', 'Avatar', 'Gladiator'];
+
+document.write('<p>Pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+
+document.write('<p>Ostatni element to <strong>');
+document.write(nowaTablica[nowaTablica.length - 1] + '</strong></p>');
+
+nowaTablica.unshift('Diuna');
+
+document.write('<p>Nowy pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
