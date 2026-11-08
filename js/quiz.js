@@ -2,6 +2,8 @@ const questions = [
     { question: "Ile to jest 7 + 5?", answer: 12 },
     { question: "Ile boków ma sześciokąt?", answer: 6 },
     { question: "Ile to jest 9 × 4?", answer: 36 }
+    {'Ile to jest 2 + 2?', 4},
+    {'Ile wynosi pierwiastek kwadratowy z 81?', 9}
 ];
 
 function startQuiz() {
