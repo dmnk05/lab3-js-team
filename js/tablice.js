@@ -38,3 +38,30 @@ let wynik = console.log(nowaDlugosc);
 //6
 //document.write('<p>Tablica: ' + tablica.join(', '));
 //document.write(' (elementów: ' + tablica.length + ')</p>');
+
+const nowaTablica = ['Matrix', 'Incepcja', 'Avatar', 'Gladiator'];
+
+document.write('<p>Pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+
+document.write('<p>Ostatni element to <strong>');
+document.write(nowaTablica[nowaTablica.length - 1] + '</strong></p>');
+
+nowaTablica.unshift('Diuna');
+
+document.write('<p>Nowy pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+
+const usunietyZKonca = nowaTablica.pop();
+const usunietyZPoczatku = nowaTablica.shift();
+
+document.write('<p>Usunięto z końca: ' + usunietyZKonca + ', usunięto z początku: ' + usunietyZPoczatku + '</p>');
+document.write('<p>Zostało w tablicy: ' + nowaTablica.join(', ') + '</p>');
+
+const oceny = [
+  ['JavaScript', 5],
+  ['Git', 4],
+  ['HTML', 5]
+];
+
+document.write('<p>Drugi przedmiot to: ' + oceny[1][0] + ', ocena: ' + oceny[1][1] + '</p>');
