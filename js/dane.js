@@ -27,3 +27,29 @@ for (let j = srodek; j < tablica.length; j++) {
   tekstFor += tablica[j] + ' ';
 }
 document.getElementById('for').textContent = tekstFor;
+
+function policzZnaki(tekst) {
+  return tekst.length;
+}
+
+let tekstForOf = 'Długość elementów nowaTablica: ';
+for (const element of nowaTablica) {
+  tekstForOf += element + ' (' + policzZnaki(element) + '), ';
+}
+document.getElementById('for-of').textContent = tekstForOf;
+
+// Przycisk 1: Pokaż dane w alert
+function pokazDane() {
+  const daneZDOM = document.getElementById('nazwisko').textContent + ' ' + document.getElementById('imie').textContent;
+  alert('Dane zespołu: ' + daneZDOM);
+}
+document.getElementById('pokazDane').addEventListener('click', pokazDane);
+
+// Przycisk 2: Dodaj element do listy #lista
+let licznikKlikniec = 0;
+document.getElementById('dodajElement').addEventListener('click', function() {
+  licznikKlikniec++;
+  const nowyElement = document.createElement('li');
+  nowyElement.textContent = 'Kliknięcie nr ' + licznikKlikniec;
+  document.getElementById('lista').append(nowyElement);
+});
